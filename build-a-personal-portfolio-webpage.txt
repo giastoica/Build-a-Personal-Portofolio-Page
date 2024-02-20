@@ -1,0 +1,218 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portofoliu Gia Stoica</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    </head>
+    <body>
+    <nav id="navbar">
+            <a id="profile-link" href="#welcome-section" target="_blank">About</a>
+            <a id="profile-link" href="#projects" target="_blank">Work</a>
+            <a id="profile-link" href="#contact" target="_blank">Contact</a>
+    </nav>   
+    <header id="welcome-section">
+        <h1>Hey, I'm Gia Stoica</h1>
+        <h3>a newbie developer</h3>
+    </header>
+    <main>
+        <section id="projects">
+            <article class="project-tile">
+                <a href="https://github.com/giastoica/Build-a-Survey/" target="_blank">
+                <img src="surveyscreenshot.jpg" alt="Survey"/></a>
+                <caption></caption><h2>A Survey Example</h2></caption>
+            </article>
+            <article class="project-tile">
+                <a href="https://github.com/giastoica/Build-a-Tribute-Page" target="_blank" ><img src="tributescreenshot.jpg" alt="Tribute Page"/></a>
+                <caption><h2>A Tribute Page Example</h2></caption>
+            </article>
+            <article class="project-tile">
+                <a href="https://github.com/giastoica/Build-a-Technical-Documentation-Page" target="_blank"><img src="technicalscreenshot.jpg" alt="Technical Documentation Page"/>
+                </a>
+                <caption><h2>A Technical Documentation Page Example</h2></caption>
+            </article>
+            <article class="project-tile">
+                <a href="https://github.com/giastoica/Build-a-Product-Landing-Page" target="_blank"><img src="productlandingpagescreenshot.jpg" alt="Product Landing Page"/></a>
+                <caption><h2>A Product Landing Page Example</h2></caption>
+            </article>
+        </section>
+
+    </main>
+    <footer id="contact">
+        <h1>Let's work together</h1>
+        <h5> Tel 0740 *** ***</h5>
+        <div class="rounded-social-buttons">
+            <a class="social-button facebook" href="https://www.facebook.com/gia.stoica" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a class="social-button linkedin" href="https://www.linkedin.com/in/gia-stoica-1768ab1b2/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+
+    </footer>
+    </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+ #navbar {
+    width:100%; 
+    background-color: purple; 
+    overflow: hidden; 
+    top: 0; 
+ position: fixed; 
+}
+
+#profile-link {
+    text-decoration: none;
+    float: left; 
+    text-align: center;
+    padding: 0.875rem 1rem;
+    color: white;
+    font-size: 1.5rem; 
+    font-style: LTC Bodoni 175, sans-serif;
+}
+#welcome-section {
+    width: 100%;
+    height:100vh; 
+    background-color: #AA336A;
+}
+#welcome-section h1 {
+    text-align: center; 
+    padding-top: 10rem; 
+    font-style: LTC Bodoni 175, sans-serif;
+    font-weight: bold; 
+    font-size: 5rem;
+    color:white; 
+}
+#welcome-section h3 {
+    text-align: center; 
+    padding-top: 5rem; 
+    font-style: LTC Bodoni 175, sans-serif;
+    font-weight: bold; 
+    font-size: 2.5rem;
+    color: white; 
+}
+#projects {
+    background-color: pink;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap; 
+    box-sizing: border-box;
+    object-fit: contain; 
+    padding: 5rem; 
+}
+.project-tile a img{
+    width: 30rem;
+    padding: 2rem; 
+}
+h2{
+    text-align:center;
+    font-style: LTC Bodoni 175, sans-serif;
+    font-weight: bold; 
+    font-size: 1.5rem;
+    color: gray;
+
+}
+#contact {
+    width: 100%;
+    height:30rem; 
+    background-color: #AA336A;
+}
+#contact h1 {
+    text-align:center;
+    padding-top: 10rem; 
+    font-style: LTC Bodoni 175, sans-serif;
+    font-weight: bold; 
+    font-size: 5rem;
+    color: white;
+}
+#contact h5 {
+    text-align: center;
+    font-style: LTC Bodoni 175, sans-serif;
+    font-weight: bold; 
+    font-size: 2rem;
+    color: white; 
+    
+}
+.rounded-social-buttons {
+    text-align: center;
+  }
+  .rounded-social-buttons .social-button {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    width: 3.125rem;
+    height: 3.125rem;
+    border: 0.125rem solid transparent;
+    padding: 0;
+    text-decoration: none;
+    text-align: center;
+    color: #fefefe;
+    font-size: 1.5625rem;
+    font-weight: normal;
+    line-height: 2em;
+    border-radius: 1.6875rem;
+    transition: all 0.5s ease;
+    margin-right: 0.25rem;
+    margin-bottom: 0.25rem;
+  }
+  
+  .rounded-social-buttons .social-button:hover, .rounded-social-buttons .social-button:focus {
+    -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  
+  .rounded-social-buttons .fa-facebook-f, .fa-linkedin {
+    font-size: 25px;
+  }
+  
+  .rounded-social-buttons .social-button.facebook {
+    background: #3b5998;
+  }
+  .rounded-social-buttons .social-button.facebook:hover, .rounded-social-buttons .social-button.facebook:focus {
+    color: #3b5998;
+    background: #fefefe;
+    border-color: #3b5998;
+  }
+  .rounded-social-buttons .social-button.linkedin {
+    background: #007bb5;
+  }
+  
+  .rounded-social-buttons .social-button.linkedin:hover, .rounded-social-buttons .social-button.linkedin:focus {
+    color: #007bb5;
+    background: #fefefe;
+    border-color: #007bb5;
+  }
+  @media only screen and (max-width: 600px) {
+    #welcome-section{
+        width: 100%;
+        height:100vh; 
+        background-color: #AA336A;}
+  }
+  @media only screen and (max-width: 600px) {
+    #projects{
+    background-color: pink;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap; 
+    box-sizing: border-box;
+    object-fit: contain; 
+    padding: 5rem; 
+  }
+  @media only screen and (max-width: 600px) {
+     width: 100%;
+    height:30rem; 
+    background-color: #AA336A;
+  }
+
+** end of undefined **
+
